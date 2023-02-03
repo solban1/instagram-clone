@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { useState } from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
-import './App.css'
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Password from './pages/Password';
-import Playground from './pages/Playground';
-import Profile from './pages/Profile';
-import Signin from './pages/Signin';
-import Signup from './pages/Signup';
-import User from './pages/User';
+import "./App.css";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Password from "./pages/Password";
+import Playground from "./pages/Playground";
+import Profile from "./pages/Profile";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import User from "./pages/User";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/user" element={<User />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

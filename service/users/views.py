@@ -15,10 +15,35 @@ class AuthViewSet(viewsets.ModelViewSet):
 
     def signup(self, request):
         serializer = self.get_serializer(data=request.data)
-        serializer.is_valid()
+        if not serializer.is_valid():
+            return response.Response(
+                serializer.errors,
+                status=status.HTTP_400_BAD_REQUEST,
+            )
         user = serializer.save()
         login(request, user)
         return response.Response(
             serializer.data,
-            status=status.HTTP_201_CREATED
+            status=status.HTTP_201_CREATED,
+        )
+    
+    def signin(self, request):
+        user = authenticate(email=request.data['email'], password=request.data['password'])
+        serializer = self.get_serializer(user)
+        if user is None:
+            return response.Response(
+                {
+                    'message': '이메일 또는 비밀번호를 확인해 주세요.',
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        else:
+            login(request, user)
+            return response.Response(
+                serializer.data,
+                status=status.HTTP_200_OK,
+            )
+
+        return response.Response(
+            status=status.HTTP_501_NOT_IMPLEMENTED
         )

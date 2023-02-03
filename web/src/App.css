@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -24,7 +24,8 @@ code {
 
 * {
   box-sizing: border-box;
-  font-family: 'helvetica neue', 'Apple SD Gothic Neo', Roboto, Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Apple SD Gothic Neo", Roboto, Helvetica, Arial,
+    sans-serif;
 }
 
 .signup-form {
@@ -36,7 +37,7 @@ code {
   flex-wrap: wrap;
   align-content: center;
   background-color: #fff;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
 
 .signin-form {
@@ -48,7 +49,7 @@ code {
   flex-wrap: wrap;
   align-content: center;
   background-color: #fff;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
 
 .password-form {
@@ -60,9 +61,8 @@ code {
   flex-wrap: wrap;
   align-content: center;
   background-color: #fff;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
-
 
 img.form-logo {
   align-self: center;
@@ -77,14 +77,14 @@ img.form-logo {
   padding: 0 10px;
   display: block;
   background-color: #fafafa;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
 }
 
 .form-input::placeholder {
   font-size: 12px;
-  color: #8e8e8e;    
+  color: #8e8e8e;
 }
 .form-input:focus {
   border: 1px solid #8a8a8a;
@@ -102,7 +102,7 @@ img.form-logo {
 }
 
 .form-btn-bottom {
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .form-btn-blue {
@@ -120,7 +120,7 @@ img.form-logo {
 }
 
 .form-btn:disabled {
-  background-color: #B9DFFC;
+  background-color: #b9dffc;
 }
 
 .form-btn:disabled:hover {
@@ -145,7 +145,6 @@ img.form-logo {
   font-size: 14px;
 }
 
-
 .password-link {
   cursor: default;
   align-self: center;
@@ -156,7 +155,7 @@ img.form-logo {
 }
 
 .password-link-text {
-  color : #00366B;
+  color: #00366b;
   align-self: center;
   font-size: 14px;
   margin-top: 70px;
@@ -166,8 +165,8 @@ img.form-logo {
   cursor: pointer;
 }
 
-.signup-link { 
-  color : #00366B;
+.signup-link {
+  color: #00366b;
   align-self: center;
 }
 
@@ -178,9 +177,8 @@ img.form-logo {
   margin: 25px;
   text-align: center;
   background-color: #fff;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
-
 
 .form-content-icon {
   margin: 18px auto 6px auto;
@@ -204,7 +202,7 @@ img.form-logo {
   padding: 0 10px;
   display: block;
   font-size: 14px;
-  color: #8e8e8e;    
+  color: #8e8e8e;
 }
 
 .form-expired {
@@ -212,7 +210,7 @@ img.form-logo {
 }
 
 .password-link-text {
-  color : #00366B;
+  color: #00366b;
   align-self: center;
   font-size: 12px;
   margin-top: 70px;
@@ -223,6 +221,6 @@ img.form-logo {
   height: 45px;
   margin-top: auto;
   margin-bottom: 0;
-  border: solid 1.5px #DBDBDB;
+  border: solid 1.5px #dbdbdb;
   border-radius: 0;
 }
