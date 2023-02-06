@@ -21,7 +21,7 @@ const SigninForm = () => {
   const onSubmit = (data: object) => {
     console.log(data);
     axios
-      .post("http://localhost:8000/users/signin/", data)
+      .post("/users/signin/", data)
       .then((response) => {
         console.log(response);
         localStorage.setItem("userId", response.data.pk);

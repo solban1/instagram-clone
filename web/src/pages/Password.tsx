@@ -1,5 +1,9 @@
+import PasswordForm from "../components/password-form/PasswordForm";
+
 const Password = () => (
-    <div>Password</div>
+  <div className="center">
+    <PasswordForm />
+  </div>
 );
 
 export default Password;
