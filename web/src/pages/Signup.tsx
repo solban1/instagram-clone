@@ -5,11 +5,11 @@ import { useCookies } from "react-cookie";
 import SignupForm from "../components/signup-form/SignupForm";
 
 const Signup = () => {
-  const [cookies] = useCookies();
+  const [cookies] = useCookies(["XSRF-TOKEN"]);
   const nav = useNavigate();
 
   useEffect(() => {
-    if (cookies.csrftoken) {
+    if (cookies["XSRF-TOKEN"]) {
       nav("/", { replace: true });
     }
   });

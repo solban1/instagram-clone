@@ -1,0 +1,156 @@
+nav {
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  margin-top: 0px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1280px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  width: 370px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  height: 30px;
+  font-size: 20px;
+  margin: 0 11px 0 11px;
+  color: #1b1a1a;
+}
+
+.nav-item-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.nav-item-profile {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu-container {
+  position: absolute;
+  top: 15px;
+  left: -175px;
+
+  padding: 0;
+
+  border-radius: 5px;
+  box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+  z-index: 11;
+}
+
+.nav-menu-container-show {
+  display: block;
+  width: 225px;
+  z-index: 1000;
+}
+.nav-menu-container-hide {
+  display: none;
+  width: 225px;
+}
+
+.nav-menu-container-tail {
+  position: absolute;
+  top: -7px;
+  left: 178px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+  content: "";
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+  box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+}
+
+.nav-menu-item-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-menu-item {
+  font-size: 14px;
+  padding: 15px;
+  margin: 0;
+}
+
+.nav-menu-icon {
+  padding-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.nav-menu-logout {
+  border-top: 1px solid #dbdbdb;
+  margin-top: 5px;
+}
+
+.icon-label-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1b1a1a;
+  padding: 14px;
+}
+
+.icon-label {
+  padding-left: 8px;
+  font-size: 15px;
+}
+
+.menu-background-show {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 900;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-background-hide {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

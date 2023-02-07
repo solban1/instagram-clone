@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Logo from "../../assets/logo.png";
 import { useForm, RegisterOptions } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const SignupForm = () => {
@@ -20,7 +19,6 @@ const SignupForm = () => {
 
   const [errorMsg, setErrorMsg] = useState("");
   const { register, handleSubmit } = useForm({ mode: "onChange" });
-  const nav = useNavigate();
 
   const onSubmit = (data: object) => {
     console.log(data);
@@ -29,7 +27,7 @@ const SignupForm = () => {
       .then((response) => {
         console.log(response);
         localStorage.setItem("userId", response.data.pk);
-        nav("/", { replace: true });
+        window.location.replace("/");
       })
       .catch((err) => {
         console.log(err);

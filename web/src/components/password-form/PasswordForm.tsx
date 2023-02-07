@@ -1,4 +1,4 @@
-import { useState, useEffect, useInsertionEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm, RegisterOptions } from "react-hook-form";
 import axios from "axios";

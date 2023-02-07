@@ -1,5 +1,10 @@
+import Header from "../components/header/Header";
+
 const Playground = () => (
-    <div>test</div>
+  <>
+    <Header></Header>
+    <div className="center">test</div>
+  </>
 );
 
 export default Playground;
